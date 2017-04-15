@@ -56,7 +56,7 @@ class ResortSnowFallEntry:
                     output.write('n/a,')
                     continue
                 if the_date in entries.daily_entries:
-                    output.write(entries.daily_entries[the_date].new_snowfall_in_inches.replace('in.','') + ',')
+                    output.write(entries.daily_entries[the_date].new_snowfall_in_inches.replace(' in.','') + ',')
                 elif the_date > date.today():
                     output.write('n/a,')
                 else:
